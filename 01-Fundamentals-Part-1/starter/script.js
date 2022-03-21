@@ -38,6 +38,7 @@ console.log(continent);
 console.log(population);
 */
 
+/*
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
@@ -58,3 +59,19 @@ console.log(year);
 console.log(typeof year);
 
 console.log(typeof null);
+*/
+
+/*
+let age = 30;
+age = 31; // let
+
+const birthYear = 1991;
+// birthYear = 1990;
+// const job;
+
+var job = "programmer";
+job = "teacher";
+
+lastName = "Schomedtmann"; //이렇게 선언해도 console에는 정상적으로 뜬다. 이유는 global object에 자동적으로 javascript property(속성)을 생성하기 때문이다. 그래도 꼭 변수를 선연해줘야한다.
+console.log(lastName);
+*/
