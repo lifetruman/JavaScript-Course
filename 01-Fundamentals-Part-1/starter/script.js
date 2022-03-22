@@ -311,6 +311,7 @@ if (height) {
 }
 */
 
+/*
 const age = "18";
 if (age === 18) console.log("You just became an adult :D (strict)");
 
@@ -333,3 +334,178 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log("Why not 23?");
+*/
+
+// const hasDriversLicense = true; // A
+// const hasGoodVision = true; // B
+
+// console.log(hasDriversLicense && hasGoodVision);
+
+/*
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//   console.log("Sarah is able to drive!");
+// } else {
+//   console.log("Someone else should drive...");
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
+*/
+
+/*
+//Coding Challenge # 3
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 100 + 110) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas) {
+//   console.log("Dolphins win the trophy 🏆");
+// } else if (scoreKoalas > scoreDolphins) {
+//   console.log("Koalas win the trophy 🏆");
+// } else if (scoreDolphins === scoreKoalas) {
+//   console.log("Both win the trophy 🏆");
+// }
+
+// BONUS 1
+// const scoreDolphins = (97 + 112 + 101) / 3;
+// const scoreKoalas = (109 + 95 + 123) / 3;
+// console.log(scoreDolphins, scoreKoalas);
+
+// if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+//   console.log("Dolphins win the trophy 🏆");
+// } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+//   console.log("Koalas win the trophy 🏆");
+// } else if (scoreDolphins === scoreKoalas) {
+//   console.log("Both win the trophy 🏆");
+// }
+
+// BONUS 2
+const scoreDolphins = (97 + 112 + 80) / 3;
+const scoreKoalas = (109 + 95 + 50) / 3;
+console.log(scoreDolphins, scoreKoalas);
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+  console.log("Dolphins win the trophy 🏆");
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+  console.log("Koalas win the trophy 🏆");
+} else if (
+  scoreDolphins === scoreKoalas &&
+  scoreDolphins >= 100 &&
+  scoreKoalas >= 100
+) {
+  console.log("Both win the trophy 🏆");
+} else {
+  console.log("No one wins the trophy 😥");
+}
+*/
+
+/*
+const day = "thursday";
+
+switch (day) {
+  case "monday": //day === 'monday' 라면 아래의 코드가 실행된다.
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break; // 만약에 break;가 없다면 아래에서 break를 만날 때까지 값이 출력된다.
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record Videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend :D");
+    break;
+  default:
+    console.log("Not a valid day!");
+}
+
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record Videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy the weekend :D");
+} else {
+  console.log("Not a valid day!");
+}
+*/
+
+/* 
+3 + 4;
+1991;
+true && false && !false;
+
+if (23 > 10) {
+  const str = "23 is Bigger";
+}
+//if else statement는 statement이다.
+//switch statement도 statement이다.
+const me = "Jo";
+console.log(`I'm ${2037 - 1991} years old ${me}`); //안에 expression은 넣을 수 있지만 statement는 넣을 수 없다.
+// console.log(`I'm ${2037 - 1991} years old. ${if (23 > 10) {
+//   const str = "23 is Bigger";
+// }}`); --> statement를 넣어버리면 error가 뜬다는 것을 알수있다.
+*/
+
+/* const age = 23;
+age >= 18;
+// ? console.log("I like to drink wine🍷") // if(age >= 18){}와 같다.
+// : console.log("I like to drink water💧"); //else part
+
+const drink = age >= 18 ? "wine🍷" : "water💧";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = "wine🍷";
+} else {
+  drink2 = "water💧";
+}
+console.log(drink2); //코드 블록안에 변수를 선언하면 코드 블록 외부에서는 사용할 수 없기 때문에 밖에 빈 변수를 선언하고 안에 변수 값을 할당해주면 코드 블록 외부에서도 불러올 수 있다.
+
+console.log(`I like to drink ${age >= 18 ? "wine🍷" : "water💧"}`); */
+
+// Coding Challenge #4
+/*
+Steven은 레스토랑에서 식사를 하러 갈 때마다 사용할 수 있는 매우 간단한 팁 계산기를 만들고 싶어합니다. 그의 나라에서는 청구서 값이 50에서 300 사이이면 15%를 팁으로 주는 것이 일반적입니다. 값이 다를 경우 팁은 20%입니다.
+1. 당신의 임무는 청구서 값에 따라 팁을 계산하는 것입니다. 이를 위해 'tip'이라는 변수를 만듭니다. if/else 문을 사용하는 것은 허용되지 않습니다. (더 쉬운 경우 if/else 문으로 시작하여 삼항 연산자로 변환할 수 있습니다!) 2. 청구서가 포함된 콘솔에 문자열을 인쇄합니다. 값, 팁 및 최종 값(청구서 + 팁). 예: '계산서는 275, 팁은 41.25, 총 금액은 316.25'
+테스트 데이터: 청구서 값 275, 40 및 430에 대한 테스트
+*/
+//275
+const bill = 40;
+//1040
+// const bill = 1040;
+//430
+// const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(tip);
+
+const totalAmount = bill + tip;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${totalAmount}`
+);
