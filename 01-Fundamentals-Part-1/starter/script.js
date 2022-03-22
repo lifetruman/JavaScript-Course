@@ -177,6 +177,7 @@ TEST DATA 2: Marks weights 95 kg and is 1.88 m tall.
 John weights 85 kg and is 1.76 m tall.
 
 */
+/*
 // const massMark = 78;
 // const heightMark = 1.69;
 // const massJohn = 92;
@@ -186,8 +187,6 @@ const heightMark = 1.88;
 const massJohn = 85;
 const heightJohn = 1.76;
 
-// const BMI = weight / (height * height);
-
 const BMIMark = massMark / heightMark ** 2;
 const BMIJohn = massJohn / (heightJohn * heightJohn);
 
@@ -196,3 +195,141 @@ const markHigherBMI = BMIMark > BMIJohn;
 console.log(BMIMark);
 console.log(BMIJohn);
 console.log(markHigherBMI);
+*/
+
+/*
+const firstName = "Jonas";
+const job = "teacher";
+const birthYear = 1991;
+const year = 2037;
+
+const jonas =
+  "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+console.log(jonas);
+
+// template literal을 쓸때 사용하는 것은 `` 이 기호이다.
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(jonasNew);
+console.log(`hi`);
+console.log("String with \n\
+multiple \n\
+lines");
+
+console.log(`String
+multiple
+lines`);
+*/
+
+/*
+const age = 15;
+
+if (age >= 18) {
+  console.log("Sarah can start driving license 🚗");
+} else {
+  const yearLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearLeft} years :)`);
+}
+
+const birthYear = 2012;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(`${century} 세기`);
+*/
+/*
+//Coding Challenge #2
+// const massMark = 95;
+// const heightMark = 1.88;
+// const massJohn = 85;
+// const heightJohn = 1.76;
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+
+if (BMIJohn > BMIMark) {
+  console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+} else {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+}
+*/
+
+/*
+//type conversion
+const inputYear = "1991";
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jonas"));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//type coercion
+console.log("I am " + 23 + " years old");
+console.log("23" - "10" - 3);
+console.log("23" * "2");
+console.log("23" / "2");
+
+let n = "1" + 1;
+n = n - 1;
+console.log(n);
+
+console.log("10" - "4" - "3" - 2 + "5");
+*/
+
+/*
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas")); //빈 string이 아닌 string은 모두 true값이다.
+console.log(Boolean({})); //empty object 빈 객체
+console.log(Boolean(""));
+
+// const money = 0; // 0은 number이기만 if, else statement condition의 logical context(논리적 문맥)에서는 이 괄호 ()안에 있으면 javascript에서는 임의의 값을 boolean으로 강제 변환된다.
+// 0은 falsy값이다.
+const money = 100; // truthy의 경우
+if (money) {
+  // --> false일때
+  console.log("true: Don't spend it all ;)"); // true값을 띄워주고
+} else {
+  console.log("false: You should get a job!"); // flase값을 띄워준다.
+}
+
+let height = 0; //값을 정의하지 않은 경우는 falsy = false (5 falsy values: 0, '', undefined, null, NaN)
+if (height) {
+  console.log("YAY! Height is defined"); // 높이가 정의되었다.
+} else {
+  console.log("Height is UNDEFINED"); // 높이가 정의되지않았다.
+}
+*/
+
+const age = "18";
+if (age === 18) console.log("You just became an adult :D (strict)");
+
+if (age == 18) console.log("You just became an adult :D (loose)");
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite); //입력한 값은 string이다.
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  // 23 === 23
+  // --> ===연산자를 사용하면 타입을 변환시킬 수 없기 때문에 false로 값이 나오지 않는다.
+  console.log("Cool! 23 is an amazing number!");
+} else if (favourite === 7) {
+  console.log("7 is also a cool number");
+} else if (favourite === 9) {
+  console.log("9 is also a cool number");
+} else {
+  console.log("Number is not 23 or 7 or 9");
+}
+
+if (favourite !== 23) console.log("Why not 23?");
